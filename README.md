@@ -1,35 +1,37 @@
-# LeviLamina Mod Template
+# LK-Stats
 
-A LeviLamina mod template
+![GitHub Tag](https://img.shields.io/github/v/tag/LeafKnife/ContainerSorted?include_prereleases&style=for-the-badge)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/LeafKnife/ContainerSorted/total?style=for-the-badge)
 
-This mod is a template for developing LeviLamina mods.
+Minecraft 基岩版服务器(BDS) 容器(背包、箱子)整理插件
 
-## Install
+## 安装
 
-Generate a new repository from this template.
+### 使用 Lip
 
-## Usage
+```sh
+lip install github.com/LeafKnife/ContainerSorted
+```
 
-Before using this mod template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
+### 手动安装
 
-1. Clone the new repository into a local folder.
+1. 从[发布页面](https://github.com/LeafKnife/ContainerSorted/releases)下载最新版本。
+2. 解压`ContainerSorted-windows-x64.zip`文件。
+3. 将`ContainerSorted`文件夹复制到 BDS 安装目录下的 plugins 文件夹中。
 
-1. Change the mod name and the expected LeviLamina version in `xmake.lua`.
+## 使用
 
-1. Add your code.
+使用指定物品(木棍), 点击背包最后一格或箱子类容器(箱子、木桶、末影箱、潜影盒、运输船、运输矿车)第一格，即可自动整理。
 
-1. Run `xmake repo -u` in the root of the repository.
+## 更新日志
 
-1. Run `xmake` to build the mod.
+查看 [CHANGELOG](CHANGELOG.md) 文件获取更多信息。
 
-Now the build is complete at `bin/`.
+## 贡献
 
-## Contributing
+如果您有任何问题，请开启一个 [issue](https://github.com/LeafKnife/ContainerSorted/issues) 来讨论  
+欢迎 PR
 
-Ask questions by creating an issue.
+## 许可
 
-PRs accepted.
-
-## License
-
-CC0-1.0 © LiteLDev
+GPL-3.0 © LWenK

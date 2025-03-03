@@ -1,6 +1,17 @@
-# Changelog
+# 更新日志
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [未发布]
+
+## [0.1.0] - 2025-03-03
+
+### 新增
+
+- 第一次提交 
+
+[未发布]: https://github.com/LeafKnife/ContainerSorted/compare/v0.1.0...dev
+[0.1.0]: https://github.com/LeafKnife/ContainerSorted/releases/tag/v0.1.0

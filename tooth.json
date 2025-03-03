@@ -1,25 +1,26 @@
 {
     "format_version": 2,
-    "tooth": "my-mod",
-    "version": "0.0.0",
+    "tooth": "github.com/LeafKnife/ContainerSorted",
+    "version": "0.1.0",
     "info": {
-        "name": "My Mod Name",
-        "description": "My Mod Description",
-        "author": "My Name",
+        "name": "ContainerSorted",
+        "description": "容器(背包，箱子)整理插件",
+        "author": "lwenk",
         "tags": [
             "platform:levilamina",
             "type:mod"
-        ]
+        ],
+        "avatar_url":"https://github.com/LeafKnife/ContainerSorted/raw/main/logo.png"
     },
-    "asset_url": "My Asset Url",
+    "asset_url": "https://github.com/LeafKnife/ContainerSorted/releases/download/v$(version)/ContainerSorted-windows-x64.zip",
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "My LeviLamina Dependency Version"
+        "github.com/LiteLDev/LeviLamina": "1.1.x"
     },
     "files": {
         "place": [
             {
-                "src": "my-mod/*",
-                "dest": "plugins/my-mod/"
+                "src": "ContainerSorted/*",
+                "dest": "plugins/ContainerSorted/"
             }
         ]
     }
