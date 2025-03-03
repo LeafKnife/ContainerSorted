@@ -1,4 +1,4 @@
-# LK-Stats
+# ContainerSorted
 
 ![GitHub Tag](https://img.shields.io/github/v/tag/LeafKnife/ContainerSorted?include_prereleases&style=for-the-badge)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/LeafKnife/ContainerSorted/total?style=for-the-badge)
