@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "tooth": "github.com/LeafKnife/ContainerSorted",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "info": {
         "name": "ContainerSorted",
         "description": "容器(背包，箱子)整理插件",
