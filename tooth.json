@@ -4,7 +4,7 @@
     "version": "0.1.1",
     "info": {
         "name": "ContainerSorted",
-        "description": "容器(背包，箱子)整理插件",
+        "description": "Minecraft 基岩版服务器(BDS) 容器整理插件",
         "author": "lwenk",
         "tags": [
             "platform:levilamina",
