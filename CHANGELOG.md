@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [未发布]
 
+### 新增
+
+- 适配LeviLamina 1.2.0-rc.1(BDS 1.21.70)
+
 ## [0.1.1] - 2025-03-04
 
 ### 新增
