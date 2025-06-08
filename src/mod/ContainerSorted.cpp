@@ -141,7 +141,7 @@ LL_TYPE_INSTANCE_HOOK(
         // if (dst.mSlot != 0 && dst.mSlot != 1 && dst.mSlot != 2)
         //     return origin(requestAction, isSwap, isSrcHintSlot, isDstHintSlot);
         auto& screenCtx  = getScreenContext();
-        auto  screenType = screenCtx.mUnk2a0ccb.as<SharedTypes::Legacy::ContainerType>();
+        auto  screenType = screenCtx.mScreenContainerType;
         if (screenType != SharedTypes::Legacy::ContainerType::Container)
             return origin(requestAction, isSwap, isSrcHintSlot, isDstHintSlot);
         Container* ct         = nullptr;

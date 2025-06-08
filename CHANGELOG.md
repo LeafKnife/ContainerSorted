@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [未发布]
 
-## [0.2.0]
+## [0.2.1] - 2025-06-08
+
+### 新增
+
+- 适配LeviLamina 1.2.0-rc.1(BDS 1.21.70)
+
+## [0.2.0] - 2025-05-07
 
 ### 新增
 
@@ -29,7 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - 第一次提交 
 
-[未发布]: https://github.com/LeafKnife/ContainerSorted/compare/v0.2.0...main
+[未发布]: https://github.com/LeafKnife/ContainerSorted/compare/v0.2.1...main
+[0.2.1]: https://github.com/LeafKnife/ContainerSorted/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/LeafKnife/ContainerSorted/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/LeafKnife/ContainerSorted/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/LeafKnife/ContainerSorted/releases/tag/v0.1.0
