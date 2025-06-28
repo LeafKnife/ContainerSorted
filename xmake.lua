@@ -11,7 +11,7 @@ else
     add_requires("levilamina 1.3.1", {configs = {target_type = "client"}})
 end
 
-add_requires("levibuildscript")
+add_requires("levibuildscript 0.4.0")
 
 if not has_config("vs_runtime") then
     set_runtimes("MD")

@@ -23,6 +23,7 @@
 #include <mc/world/inventory/network/ItemStackRequestActionType.h>
 #include <mc/world/inventory/network/ItemStackRequestSlotInfo.h>
 #include <mc/world/item/Item.h>
+#include <mc/world/item/ItemLockHelper.h>
 #include <mc/world/item/ItemStack.h>
 #include <mc/world/item/ItemStackBase.h>
 #include <mc/world/level/BlockPos.h>
@@ -31,6 +32,7 @@
 #include <mc/world/level/block/actor/BlockActor.h>
 #include <mc/world/level/block/actor/ShulkerBoxBlockActor.h>
 #include <optional>
+
 
 namespace lk::hook {
 
@@ -63,6 +65,8 @@ inline void sortInventory(Container& container) {
 inline void transferInventory2Container(Container& inventory, Container& container, bool all = true) {
     for (auto item = inventory.begin() + 9; item != inventory.end(); ++item) {
         if (item->isNull()) continue;
+        ItemStackBase const& it = *item;
+        if (ItemLockHelper::getItemLockMode(it) != ItemLockMode::None) continue;
         if (!all) {
             if (container.getItemCount(*item) == 0) continue;
         }
@@ -77,6 +81,8 @@ inline void transferInventory2Container(Container& inventory, Container& contain
 inline void transferInventory2ShulkerBox(Container& inventory, Container& container, bool all = true) {
     for (auto item = inventory.begin() + 9; item != inventory.end(); ++item) {
         if (item->isNull()) continue;
+        ItemStackBase const& it = *item;
+        if (ItemLockHelper::getItemLockMode(it) != ItemLockMode::None) continue;
         if (!ShulkerBoxBlockActor::itemAllowed(*item)) continue;
         if (!all) {
             if (container.getItemCount(*item) == 0) continue;
