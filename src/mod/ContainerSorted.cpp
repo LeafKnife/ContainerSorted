@@ -39,9 +39,11 @@ namespace lk::hook {
 inline void sortContainer(Container& container) {
     auto items = container.getSlotCopies();
     std::sort(items.begin(), items.end(), [](ItemStack const& itemA, ItemStack const& itemB) {
-        if (itemA.getId() != itemB.getId()) return itemA.getId() > itemB.getId();
-        if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() > itemB.getAuxValue();
-        return itemA.mCount > itemB.mCount;
+        if (itemA.getItem()->mCreativeCategory != itemB.getItem()->mCreativeCategory)
+            return (short)itemA.getItem()->mCreativeCategory < (short)itemB.getItem()->mCreativeCategory;
+        if (itemA.getId() != itemB.getId()) return itemA.getId() < itemB.getId();
+        if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() < itemB.getAuxValue();
+        return itemA.mCount < itemB.mCount;
     });
     container.removeAllItems();
     for (auto& item : items) {
@@ -52,9 +54,11 @@ inline void sortContainer(Container& container) {
 inline void sortInventory(Container& container) {
     auto items = container.getSlotCopies();
     std::sort(items.begin() + 9, items.end(), [](ItemStack const& itemA, ItemStack const& itemB) {
-        if (itemA.getId() != itemB.getId()) return itemA.getId() > itemB.getId();
-        if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() > itemB.getAuxValue();
-        return itemA.mCount > itemB.mCount;
+        if (itemA.getItem()->mCreativeCategory != itemB.getItem()->mCreativeCategory)
+            return (short)itemA.getItem()->mCreativeCategory < (short)itemB.getItem()->mCreativeCategory;
+        if (itemA.getId() != itemB.getId()) return itemA.getId() < itemB.getId();
+        if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() < itemB.getAuxValue();
+        return itemA.mCount < itemB.mCount;
     });
     container.removeAllItems();
     for (auto& item : items) {
