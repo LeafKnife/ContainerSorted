@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "tooth": "github.com/LeafKnife/ContainerSorted",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "info": {
         "name": "ContainerSorted",
         "description": "Minecraft 基岩版服务器(BDS) 容器整理插件",

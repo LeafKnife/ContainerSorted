@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [未发布]
 
-## [0.4.0] - 2025-08-03
+## [0.4.1] - 2025-08-06
 
 ### 新增
 
@@ -52,8 +52,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - 第一次提交 
 
-[未发布]: https://github.com/LeafKnife/ContainerSorted/compare/v0.4.0...main
-[0.4.0]: https://github.com/LeafKnife/ContainerSorted/compare/v0.3.0...v0.4.0
+[未发布]: https://github.com/LeafKnife/ContainerSorted/compare/v0.4.1...main
+[0.4.0]: https://github.com/LeafKnife/ContainerSorted/compare/v0.3.0...v0.4.1
 [0.3.0]: https://github.com/LeafKnife/ContainerSorted/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/LeafKnife/ContainerSorted/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/LeafKnife/ContainerSorted/compare/v0.1.1...v0.2.0

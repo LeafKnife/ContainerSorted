@@ -39,8 +39,10 @@ namespace lk::hook {
 inline void sortContainer(Container& container) {
     auto items = container.getSlotCopies();
     std::sort(items.begin(), items.end(), [](ItemStack const& itemA, ItemStack const& itemB) {
-        if (itemA.getItem()->mCreativeCategory != itemB.getItem()->mCreativeCategory)
-            return (short)itemA.getItem()->mCreativeCategory < (short)itemB.getItem()->mCreativeCategory;
+        auto pItemA = itemA.getItem();
+        auto pItemB = itemB.getItem();
+        if (pItemA != nullptr && pItemB != nullptr && pItemA->mCreativeCategory != pItemB->mCreativeCategory)
+            return (short)pItemA->mCreativeCategory < (short)pItemA->mCreativeCategory;
         if (itemA.getId() != itemB.getId()) return itemA.getId() < itemB.getId();
         if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() < itemB.getAuxValue();
         return itemA.mCount < itemB.mCount;
@@ -54,8 +56,10 @@ inline void sortContainer(Container& container) {
 inline void sortInventory(Container& container) {
     auto items = container.getSlotCopies();
     std::sort(items.begin() + 9, items.end(), [](ItemStack const& itemA, ItemStack const& itemB) {
-        if (itemA.getItem()->mCreativeCategory != itemB.getItem()->mCreativeCategory)
-            return (short)itemA.getItem()->mCreativeCategory < (short)itemB.getItem()->mCreativeCategory;
+        auto pItemA = itemA.getItem();
+        auto pItemB = itemB.getItem();
+        if (pItemA != nullptr && pItemB != nullptr && pItemA->mCreativeCategory != pItemB->mCreativeCategory)
+            return (short)pItemA->mCreativeCategory < (short)pItemA->mCreativeCategory;
         if (itemA.getId() != itemB.getId()) return itemA.getId() < itemB.getId();
         if (itemA.getAuxValue() != itemB.getAuxValue()) return itemA.getAuxValue() < itemB.getAuxValue();
         return itemA.mCount < itemB.mCount;
