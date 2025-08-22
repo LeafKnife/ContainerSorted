@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [未发布]
 
+## [0.4.2] - 2025-08-22
+
+### 修复
+
+- 木棍无法放入部分容器内的问题
+
 ## [0.4.1] - 2025-08-06
 
 ### 新增

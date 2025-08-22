@@ -197,7 +197,7 @@ LL_TYPE_INSTANCE_HOOK(
             transferContainer2Inventory(*inventory, *ct, false);
             break;
         default:
-            break;
+            return origin(requestAction, isSwap, isSrcHintSlot, isDstHintSlot);
         }
         mPlayer.refreshInventory();
         return ItemStackNetResult::Error;
